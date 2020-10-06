@@ -1,5 +1,5 @@
 'use strict';
-
+const cors = require('cors')
 // load modules
 const express = require('express');
 const morgan = require('morgan');
@@ -16,7 +16,7 @@ const app = express();
 // setup morgan which gives us http request logging
 app.use(morgan('dev'));
 app.use(express.json());
-
+app.use(cors());
 // TODO setup your api routes here
 app.use('/api', usersRoute);
 app.use('/api', coursesRoute);
