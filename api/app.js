@@ -1,5 +1,5 @@
 'use strict';
-const cors = require('cors')
+const cors = require('cors');
 // load modules
 const express = require('express');
 const morgan = require('morgan');

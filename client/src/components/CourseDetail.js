@@ -69,7 +69,7 @@ class CourseDetail extends Component{
                   <div className="course--header">
                     <h4 className="course--label">Course</h4>
                     <h3 className="course--title">{this.state.course.title}</h3>
-                    <p>By {this.state.course.User.firstName} {this.state.course.User.lastName}</p>
+                    <p>By {this.state.course.user.firstName} {this.state.course.user.lastName}</p>
                   </div>
                   <div className="course--description">
                     <ReactMarkdown source={this.state.course.description}/>

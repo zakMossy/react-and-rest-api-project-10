@@ -94,7 +94,7 @@ class UpdateCourse extends Component {
                             />
                           </div>
 
-                          <p>By {this.state.course.User.firstName} {this.state.course.User.lastName}</p>
+                          <p>By {this.state.course.user.firstName} {this.state.course.user.lastName}</p>
                         </div>
                         <div className="course--description">
                           <div>
