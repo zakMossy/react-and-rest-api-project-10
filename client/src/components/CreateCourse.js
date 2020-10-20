@@ -19,6 +19,7 @@ class CreateCourse extends Component{
       e.preventDefault();
 
       const {context} = this.props;
+      console.log(context.authenticatedUser);
       let username = context.authenticatedUser.emailAddress;
       let password = context.authenticatedUser.password;
 

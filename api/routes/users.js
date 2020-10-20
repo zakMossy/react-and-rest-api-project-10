@@ -9,7 +9,7 @@ router.get('/users', authenticateUser, asyncHandler(async (req, res) => {
 	const userId = req.currentUser.dataValues.id;
 	const user = await User.findByPk(userId, {
 		attributes: {
-			exclude: ['password','createdAt', 'updatedAt']
+			exclude: ['createdAt', 'updatedAt']
 		},
 	});
 
