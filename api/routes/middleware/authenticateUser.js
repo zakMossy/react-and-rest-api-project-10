@@ -20,7 +20,7 @@ async function authenticateUser(req, res, next) {
 				req.currentUser = user;
 			} else
 			{
-				message = `Authentication failure for username: ${user.username}`;
+				message = `Authentication failure for username: ${user.emailAddress}`;
 			}
 		} else
 		{
