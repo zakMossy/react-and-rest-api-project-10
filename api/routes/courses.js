@@ -52,7 +52,7 @@ router.post('/courses', authenticateUser, asyncHandler(async (req, res) => {
 			const errorMsg = [];
 
 			error.errors.map((err) => errorMsg.push(err.message));
-			res.status(400).json({ error: errorMsg });
+			res.status(400).json({ errors: errorMsg });
 		} else {
 			next(error);
 		};
@@ -90,7 +90,7 @@ router.put('/courses/:id', authenticateUser, asyncHandler(async (req, res) => {
 					const errorMsg = [];
 
 					error.errors.map((err) => errorMsg.push(err.message));
-					res.status(400).json({ error: errorMsg });
+					res.status(400).json({ errors: errorMsg });
 				} else
         {
 					next(error);
