@@ -34,7 +34,7 @@ router.post('/users', asyncHandler(async (req, res, next) => {
 			const errorMsg = [];
 
 			error.errors.map((err) => errorMsg.push(err.message));
-			res.status(400).json({ error: errorMsg });
+			res.status(400).json({ errors: errorMsg });
 		} else
 		{
 			next(error);
