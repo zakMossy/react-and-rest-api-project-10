@@ -7,7 +7,7 @@ class CreateCourse extends Component{
     const {context} = this.props;
     this.state = {
       title:"",
-      userId:`${context.authenticatedUser}`,
+      userId:`${context.authenticatedUser.id}`,
       description:"",
       estimatedTime:"",
       materialsNeeded:"",
